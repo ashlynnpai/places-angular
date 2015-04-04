@@ -1,4 +1,5 @@
-describe('Controller: CityController', function() {
+//comments from AngularJS: Up and Running
+describe('CityController', function() {
   // Instantiate a new version of my module before each test
   beforeEach(module('citiesApp'));
 
@@ -11,7 +12,8 @@ describe('Controller: CityController', function() {
   }));
 
   it('should have items available on load', function() {
-    expect(city.name).toEqual('Reno');
+    expect(city.country).toEqual('USA');
+    expect(city.cities.length).toBe(4);
   });
 });  
 
